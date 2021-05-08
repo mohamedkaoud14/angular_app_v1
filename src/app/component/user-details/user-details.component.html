@@ -1,0 +1,42 @@
+<div *ngIf="user; else nouser" class="container mt-3">
+    <div class="d-flex justify-content-center">
+      <div class="card text-center" style="width: 30rem;">
+        <div class="card-body">
+          <h5 class="card-title">Name : {{ user.name }}</h5>
+          <p class="card-text">Email : {{ user.email }}</p>
+          <p class="card-text">City : {{ user.city }}</p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="col-4">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#userEdit"
+              id="add"
+              class="btn btn-info"
+              >Edit</a
+            >
+          </div>
+          <app-user-edit [userInfo]="user"></app-user-edit>
+  
+          <div class="col-4">
+            <button
+              type="submit"
+              class="btn btn-warning text-center"
+              data-bs-toggle="modal"
+              data-bs-target="#deleteBtn"
+            >
+              Delete
+            </button>
+            <app-delete-user></app-delete-user>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+  <ng-template #nouser>
+    <p class="alert alert-danger mt-3">
+      We couldn't find any users with this id
+    </p>
+  </ng-template>
+  

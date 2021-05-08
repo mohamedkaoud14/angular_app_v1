@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Heba Mostafa",
+      "email": "h@gmail.com",
+      "city": "Rehab"
+    },
+    {
+      "id": 2,
+      "name": "Mohamed",
+      "email": "m@gmail.com",
+      "city": "Zagaziq"
+    },
+    {
+      "id": 3,
+      "name": "Mahmoud Mostafa",
+      "email": "mh@gmail.com",
+      "city": "Cairo"
+    },
+    {
+      "id": 4,
+      "name": "Mostafa Mohamed",
+      "email": "mostafa@gmail.com",
+      "city": "Cairo"
+    },
+    {
+      "id": 5,
+      "name": "Aya Hamed",
+      "email": "Aya@gmail.com",
+      "city": "Cairo"
+    },
+    {
+      "id": 6,
+      "name": "Heba Mostafa Mohamed",
+      "email": "hoba.mostafa97@gmail.com",
+      "city": "Cairo"
+    }
+  ]
+}
