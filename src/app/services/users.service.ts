@@ -6,12 +6,14 @@ import { User } from '../models/user';
   providedIn: 'root'
 })
 export class UsersService {
-readonly baseURL:string = "http://localhost:3000/users"
+readonly baseURL:string = "https://angular-serverapp.herokuapp.com/api/v1/students"
   constructor(private myClient:HttpClient) {}
   isUpdated: boolean = false;
    getUsers()
    {
      let response = this.myClient.get(this.baseURL,{observe:"response"})
+    // alert("dgsdg")
+    console.log('response')
       return response
    }
    getUserById(id:string)
